@@ -2,6 +2,7 @@ import pandas as pd
 import csv
 from datetime import datetime 
 from data_entry import get_date, get_amount, get_category, get_description
+import matplotlib.pyplot as plt
 
 
 class CSV:
@@ -68,7 +69,24 @@ def add():
     category = get_category()
     description = get_description()
     CSV.add_entry(date, amount, category, description)
-        
+    
+def plot_transactions(df):
+    df.set_index("Date", inplace=True)
+    
+    income_df = (
+        df[df["Category"] == "Income"]
+        .resample("D")
+        .sum()
+        .reindex(df.index, fill_value=0)
+    )
+    
+    expense_df = (
+        df[df["Category"] == "Expense"]
+        .resample("D")
+        .sum()
+        .reindex(df.index, fill_value=0)
+    )
+    
 def main():
     while True:
         print("\n1. Add new transaction")
