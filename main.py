@@ -87,6 +87,15 @@ def plot_transactions(df):
         .reindex(df.index, fill_value=0)
     )
     
+    plt.figure(figsize=(10, 5))
+    plt.plot(income_df.index, income_df["Amount"], label="Income", color="purple", linestyle="-.")
+    plt.plot(expense_df.index, expense_df["Amount"], label="Expense", color="green", linestyle="--")
+    plt.legend()
+    plt.title("Daily Transactions Income vs Expense")
+    plt.xlabel("Date")
+    plt.ylabel("Amount")
+    plt.show()
+    
 def main():
     while True:
         print("\n1. Add new transaction")
