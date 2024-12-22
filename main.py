@@ -69,4 +69,4 @@ def add():
     description = get_description()
     CSV.add_entry(date, amount, category, description)
         
-add()
+CSV.get_transactions("20-12-2024", "21-12-2024")
