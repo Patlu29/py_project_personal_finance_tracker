@@ -12,7 +12,17 @@ class CSV:
             pd.read_csv(cls.CSV_FILE)
             
         except FileNotFoundError:
-            df = pd.DataFrame(columns=["Date", "Amount", "category", "Description"])
+            df = pd.DataFrame(columns=["Date", "Amount", "Category", "Description"])
             df.to_csv(cls.CSV_FILE, index=False)
-            
+        
+        @classmethod
+        def add_entry(cls, date, amount, category, description):
+            new_entry = {
+                "Date": date,
+                "Amount": amount,
+                "Category": category,
+                "Description": description
+            }
+        
+         
 CSV.initialize_csv()
