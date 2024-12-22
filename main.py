@@ -34,4 +34,4 @@ def get_category():
     return get_category()
     
 def get_description():
-    pass
+    return input("Enter the description(optional): ")
