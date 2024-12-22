@@ -14,9 +14,15 @@ def get_date(prompt, allow_default=False):
         print("Invalid date Format.. Please enter a valid date in(dd-mm-yyyy) format")
         return get_date(prompt, allow_default)
     
-
 def get_amount():
-    pass
+    try:
+        amount = float(input("Enter the amount: "))
+        if amount <= 0:
+            raise ValueError("Amount must be non-negative and non-zero")
+        return amount
+    except ValueError as e:
+        print(e)
+        return get_amount()
 
 def get_categry():
     pass
