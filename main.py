@@ -8,6 +8,7 @@ class CSV:
     # create and name the scv file
     CSV_FILE = "finance_data.csv"
     COLUMNS = ["Date", "Amount", "Category", "Description"]
+    FORMAT = "%d-%m-%Y"
     
     # create a function to initialize a new csv file if it desn,t exist
     @classmethod
@@ -35,6 +36,30 @@ class CSV:
             # it write a new row with a new entry in the csv file
             writer.writerow(new_entry)
         print("Entry added successfully")
+        
+    @classmethod
+    def get_transactions(cls, start_date, end_date):
+        df = pd.read_csv(cls.CSV_FILE)
+        df["Date"] = pd.to_datetime(df["Date"], format=CSV.FORMAT)
+        start_date = datetime.strptime(start_date, CSV.FORMAT)
+        end_date = datetime.strptime(end_date, CSV.FORMAT)
+        
+        mask = (df["Date"] >= start_date) & (df["Date"] <= end_date)
+        filtered_df = df.loc[mask]
+        
+        if filtered_df.empty:
+            print("No transactions found in the given range")
+        else:
+            print(f"Transactions between {start_date.strftime(CSV.FORMAT)} and {end_date.strftime(CSV.FORMAT)}")
+            print(filtered_df.to_string(index=False, formatters={"Date": lambda x: x.strftime(CSV.FORMAT)}))
+            
+        total_income = filtered_df[filtered_df["category"] == "Income"]["Amount"].sum()
+        total_expense = filtered_df[filtered_df["category"] == "Expense"]["Amount"].sum()
+        
+        print("\n Summary: ")
+        print(f"Total Income: ${total_income:.2f}")
+        print(f"Total Expense: ${total_expense:.2f}")
+        print(f"Net Savings: ${total_income - total_expense:.2f}")
         
 def add():
     CSV.initialize_csv()
