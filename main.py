@@ -90,8 +90,8 @@ def plot_transactions(df):
     )
     
     plt.figure(figsize=(10, 5))
-    plt.plot(income_df.index, income_df["Amount"], label="Income", color="purple")
-    plt.plot(expense_df.index, expense_df["Amount"], label="Expense", color="green")
+    plt.plot(income_df.index, income_df["Amount"], label="Income", color="purple", linestyle="-.")
+    plt.plot(expense_df.index, expense_df["Amount"], label="Expense", color="green", linestyle="--")
     plt.legend()
     plt.title("Daily Transactions Income vs Expense")
     plt.xlabel("Date")
