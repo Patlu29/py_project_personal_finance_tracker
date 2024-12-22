@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 class CSV:
     # create and name the scv file
     CSV_FILE = "finance_data.csv"
-    COLUMNS = ["Date", "Amount", "Category", "Description"]
+    COLUMNS = ["Date", "Amount", "category", "Description"]
     FORMAT = "%d-%m-%Y"
     
     # create a function to initialize a new csv file if it desn,t exist
@@ -62,6 +62,8 @@ class CSV:
         print(f"Total Expense: ${total_expense:.2f}")
         print(f"Net Savings: ${total_income - total_expense:.2f}")
         
+        return filtered_df
+        
 def add():
     CSV.initialize_csv()
     date = get_date("Enter the date of transaction (dd-mm-yyyy) or press enter for today's date: ", allow_default=True)
@@ -74,22 +76,22 @@ def plot_transactions(df):
     df.set_index("Date", inplace=True)
     
     income_df = (
-        df[df["Category"] == "Income"]
+        df[df["category"] == "Income"]
         .resample("D")
         .sum()
         .reindex(df.index, fill_value=0)
     )
     
     expense_df = (
-        df[df["Category"] == "Expense"]
+        df[df["category"] == "Expense"]
         .resample("D")
         .sum()
         .reindex(df.index, fill_value=0)
     )
     
     plt.figure(figsize=(10, 5))
-    plt.plot(income_df.index, income_df["Amount"], label="Income", color="purple", linestyle="-.")
-    plt.plot(expense_df.index, expense_df["Amount"], label="Expense", color="green", linestyle="--")
+    plt.plot(income_df.index, income_df["Amount"], label="Income", color="purple")
+    plt.plot(expense_df.index, expense_df["Amount"], label="Expense", color="green")
     plt.legend()
     plt.title("Daily Transactions Income vs Expense")
     plt.xlabel("Date")
@@ -110,6 +112,8 @@ def main():
             start_date = get_date("Enter the start date (dd-mm-yyyy): ")
             end_date = get_date("Enter the end date (dd-mm-yyyy): ")
             df = CSV.get_transactions(start_date, end_date)
+            if input("Do you want to see a transaction plot(Y/N): ").lower() == 'y':
+                plot_transactions(df)
         elif choice == "3":
             print("Thank you!..")
             break
