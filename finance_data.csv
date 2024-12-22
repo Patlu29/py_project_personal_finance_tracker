@@ -1,39 +1,92 @@
 Date,Amount,category,Description
-21-12-2024,1500.0,Expense,Cloths
-21-12-2024,1000.0,Income,loan
-10-01-2024,100.0,Income,mom gave
-20-01-2024,5000.0,Income,salary
-30-01-2024,500.0,Expense,mobile bill
-05-02-2024,1000.0,Income,dad gave
-15-02-2024,500.0,Expense,party
-20-02-2024,5000.0,Income,salary
-15-03-2024,1000.0,Expense,shopping
-20-03-2024,5500.0,Income,salary
-30-03-2024,5000.0,Expense,hospital
-10-03-2024,1000.0,Expense,home things
-20-04-2024,5500.0,Income,salary
-10-05-2024,3000.0,Expense,vacation
-20-05-2024,5500.0,Income,salary
-30-05-2024,500.0,Expense,mobile bill
-10-06-2024,2000.0,Expense,home loan
-20-06-2024,6000.0,Income,salary
-08-07-2024,1000.0,Expense,parants shopping
-13-05-2024,1000.0,Expense,food
-20-07-2024,6000.0,Income,salary
-04-08-2024,1000.0,Expense,cloths
-16-08-2024,1000.0,Expense,home management
-20-08-2024,6000.0,Income,salary
-29-08-2024,5000.0,Expense,birthday party
-30-08-2024,30000.0,Expense,buy a new home
-07-09-2024,500.0,Income,mom gave
-14-09-2024,1000.0,Income,from GF
-20-09-2024,7000.0,Income,salary
-14-10-2024,2500.0,Expense,home management
-14-10-2024,800.0,Expense,mobile bill
-20-10-2024,7000.0,Income,salary
-11-11-2024,50000.0,Income,lottery win
-15-11-2024,20000.0,Expense,settled debt
-20-11-2024,7000.0,Income,salary
-02-12-2024,9000.0,Expense,tour
-14-12-2024,500.0,Expense,mobile bill
-20-12-2024,7000.0,Income,salary
+23-09-2024,74.89,Expense,Dinner
+24-09-2024,62.23,Expense,Water bill
+25-09-2024,125.45,Income,Consultation fee
+26-09-2024,40.50,Expense,Doctor's fee
+27-09-2024,87.76,Expense,Gaming
+28-09-2024,57.12,Expense,Taxi fare
+29-09-2024,44.00,Expense,Lunch
+30-09-2024,69.90,Income,Freelance project
+01-10-2024,113.34,Expense,Books
+02-10-2024,34.45,Expense,Fitness class
+03-10-2024,134.67,Expense,Concert
+04-10-2024,37.90,Income,Bonus
+05-10-2024,90.15,Expense,Snacks
+06-10-2024,60.89,Expense,Electricity bill
+07-10-2024,147.00,Expense,Clothes
+08-10-2024,54.67,Income,Part-time salary
+09-10-2024,73.40,Expense,Movies
+10-10-2024,25.50,Expense,Bus fare
+11-10-2024,79.30,Expense,Dinner
+12-10-2024,66.45,Expense,Phone bill
+13-10-2024,108.12,Expense,Accessories
+14-10-2024,49.23,Expense,Health check-up
+15-10-2024,55.90,Income,Freelance project
+16-10-2024,30.67,Expense,Parking fee
+17-10-2024,75.89,Expense,Lunch
+18-10-2024,63.34,Expense,Water bill
+19-10-2024,126.78,Income,Consultation fee
+20-10-2024,42.50,Expense,Doctor's fee
+21-10-2024,88.76,Expense,Gaming
+22-10-2024,58.12,Expense,Taxi fare
+23-10-2024,46.00,Expense,Dinner
+24-10-2024,71.23,Expense,Internet bill
+25-10-2024,115.34,Expense,Books
+26-10-2024,35.45,Income,Freelance work
+27-10-2024,136.67,Expense,Concert
+28-10-2024,38.90,Expense,Fuel
+29-10-2024,91.34,Income,Online course sale
+30-10-2024,62.89,Expense,Electricity bill
+31-10-2024,149.45,Expense,Clothes
+01-11-2024,56.23,Income,Part-time salary
+02-11-2024,74.90,Expense,Movies
+03-11-2024,33.67,Expense,Bus fare
+04-11-2024,78.00,Income,Bonus
+05-11-2024,65.40,Expense,Phone bill
+06-11-2024,109.78,Income,Freelance project
+07-11-2024,51.20,Expense,Health check-up
+08-11-2024,57.80,Expense,Streaming subscription
+09-11-2024,26.70,Expense,Parking fee
+10-11-2024,81.89,Expense,Dinner
+11-11-2024,68.23,Expense,Water bill
+12-11-2024,128.45,Income,Consultation fee
+13-11-2024,43.90,Expense,Doctor's fee
+14-11-2024,91.76,Expense,Gaming
+15-11-2024,59.12,Income,Project income
+16-11-2024,48.00,Expense,Lunch
+17-11-2024,70.90,Expense,Internet bill
+18-11-2024,117.34,Expense,Books
+19-11-2024,36.45,Income,Bonus
+20-11-2024,137.67,Expense,Concert
+21-11-2024,39.90,Income,Freelance work
+22-11-2024,92.15,Expense,Snacks
+23-11-2024,61.89,Expense,Electricity bill
+24-11-2024,148.00,Expense,Clothes
+25-11-2024,53.67,Income,Part-time salary
+26-11-2024,79.40,Expense,Movies
+27-11-2024,27.50,Expense,Bus fare
+28-11-2024,85.30,Expense,Dinner
+29-11-2024,69.45,Expense,Phone bill
+30-11-2024,104.12,Expense,Accessories
+01-12-2024,48.23,Expense,Health check-up
+02-12-2024,58.90,Expense,Streaming subscription
+03-12-2024,31.67,Income,Online course sale
+04-12-2024,77.80,Expense,Lunch
+05-12-2024,64.34,Expense,Water bill
+06-12-2024,132.78,Income,Consultation fee
+07-12-2024,40.50,Expense,Doctor's fee
+08-12-2024,98.76,Expense,Gaming
+09-12-2024,55.00,Income,Freelance project
+10-12-2024,42.37,Expense,Snacks
+11-12-2024,67.89,Expense,Internet bill
+12-12-2024,112.00,Expense,Books
+13-12-2024,34.90,Expense,Fitness class
+14-12-2024,150.78,Income,Bonus
+15-12-2024,23.56,Expense,Fuel
+16-12-2024,89.45,Expense,Dinner
+17-12-2024,67.23,Expense,Electricity bill
+18-12-2024,154.32,Income,Part-time salary
+19-12-2024,45.67,Expense,Medicines
+20-12-2024,78.99,Income,Freelance work
+21-12-2024,32.89,Expense,Bus fare
+22-12-2024,125.47,Expense,Lunch
